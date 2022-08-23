@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<form class="pt-5" method="post" asp-controller="Home" asp-action="Index">
+    <div class="btn-group container" role="group" aria-label="Basic radio toggle button group">
+        <div class="row mt-5">
+            <div class="col-sm mt-5">
+                <input type="radio" class="btn-check" name="action" style="visibility:hidden" id="radio1" autocomplete="off" value="Student" />
+                <label id="label" class="btn btn-outline-dark border-0 w-75 h-75 p-0" style="border-radius: 5000px" for="radio1"><a style="color: #343a40" asp-controller="Home" asp-action="ShowStudents"><img class="w-100 h-100 p-3" style="border-radius:1000px;border:3px solid;" src="~/img/pngwing.com (1).png" /></a></label>
+            </div>
+            <div class="col-sm mt-5">
+                <input type="radio" class="btn-check" name="action" style="visibility:hidden" id="radio2" autocomplete="off" value="Teacher" />
+                <label id="label" class="btn btn-outline-dark border-0 w-75 h-75 p-0" style="border-radius: 5000px;" for="radio2"><a style="color: #343a40" asp-controller="Home" asp-action="ShowTeachers"><img class="w-100 h-100 p-3" style="border-radius:1000px;border:3px solid;" src="~/img/pngwing.com (2).png" /></a></label>
+            </div>
+            <div class="col-sm mt-5">
+                <input type="radio" class="btn-check" style="visibility:hidden" name="action" id="radio3" autocomplete="off" value="Group" />
+                <label id="label" class="btn btn-outline-dark border-0 w-75 h-75 p-0" style="border-radius: 5000px;" for="radio3"><a style="color: #343a40" asp-controller="Home" asp-action="ShowGroups"><img class="w-100 h-100 p-3" style="border-radius:1000px;border:3px solid;" src="~/img/group.png" /></a></label>
+            </div>
+            <div class="col-sm mt-5">
+                <input type="radio" class="btn-check" style="visibility:hidden" name="action" id="radio4" autocomplete="off" value="Subject" />
+                <label id="label" class="btn btn-outline-dark border-0 w-75 h-75 p-0" style="border-radius: 5000px;" for="radio4"><a style="color: #343a40" asp-controller="Home" asp-action="ShowSubjects"><img class="w-100 h-100 p-3" style="border-radius:100px;border:3px solid;" src="~/img/if-spell-scroll-2913111_88822.png" /></a></label>
+            </div>
+        </div>
+    </div>
+</form>
